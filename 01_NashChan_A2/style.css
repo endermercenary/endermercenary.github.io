@@ -171,11 +171,9 @@ footer{
 }
 
 /* Mobile */
-@media (max-width:800px){ /*at mobile size*/
-    #qrCodeImg{display:none;} /*hide QR code */
-    
-}
+
 @media screen and (max-width:800px){
+    #qrCodeImg{display:none;} /*hide QR code */
 
     #hamBtn{
         display:block;
