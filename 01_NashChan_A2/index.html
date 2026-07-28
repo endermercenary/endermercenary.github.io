@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Human Brain</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Background -->
+
+    <div id="background">
+
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+        <div class="circle c4"></div>
+        <div class="circle c5"></div>
+
+    </div>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>The Human Brain</h1>
+
+        <p>
+            Learn how your brain works through interactive activities.
+        </p>
+
+    </header>
+
+    <!-- Menu -->
+
+    <nav>
+
+        <button id="hamBtn">
+            ≡
+        </button>
+
+        <ul id="menu">
+
+            <li>
+                <button class="navBtn" data-page="home">
+                    Home
+                </button>
+            </li>
+
+            <li>
+                <button class="navBtn" data-page="anatomy">
+                    Brain Anatomy
+                </button>
+            </li>
+
+            <li>
+                <button class="navBtn" data-page="activity">
+                    Brain Activity
+                </button>
+            </li>
+
+            <li>
+                <button class="navBtn" data-page="quiz">
+                    Quiz
+                </button>
+            </li>
+
+            <li>
+                <button class="navBtn" data-page="game">
+                    Memory Game
+                </button>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- Main -->
+
+    <main>
+
+        <!-- Home -->
+
+        <section id="home" class="page active">
+
+            <div class="hero">
+
+                <div class="heroText">
+
+                    <h2>Welcome!</h2>
+
+                    <p>
+
+                        The human brain is one of the most complex organs in the body.
+                        It controls everything you think, feel and do.
+                        Explore the sections below to learn about the brain and
+                        test your knowledge with a fun memory game.
+
+                    </p>
+
+                    <button id="startBtn">
+
+                        Start Exploring
+
+                    </button>
+
+                </div>
+
+                <div class="heroImage">
+
+                    <img src="images/brain.png"
+                        alt="Human Brain">
+
+                </div>
+
+            </div>
+
+            <div class="factBox">
+
+                <h3>Did You Know?</h3>
+
+                <p id="factText">
+
+                    Your brain contains around
+                    <strong>86 billion neurons.</strong>
+
+                </p>
+
+            </div>
+
+            <div class="homeCards">
+
+                <div class="card homeCard" data-page="anatomy">
+
+                    <h3>🧠 Brain Anatomy</h3>
+
+                    <p>
+
+                        Learn about the different parts of the brain
+                        and discover what each region controls.
+
+                    </p>
+
+                </div>
+
+                <div class="card homeCard" data-page="activity">
+
+                    <h3>⚡ Brain Activity</h3>
+
+                    <p>
+
+                        Discover how neurons send electrical
+                        signals around your body.
+
+                    </p>
+
+                </div>
+
+                <div class="card homeCard" data-page="quiz">
+
+                    <h3>❓ Quiz</h3>
+
+                    <p>
+
+                        Test yourself with five questions after
+                        learning about the brain.
+
+                    </p>
+
+                </div>
+
+                <div class="card homeCard" data-page="game">
+
+                    <h3>🎮 Memory Challenge</h3>
+
+                    <p>
+
+                        Match each brain part with its correct
+                        function before the timer runs out.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        </section>
+
+        <!-- Anatomy -->
+
+
+        <section id="anatomy" class="page">
+
+            <h2>Brain Anatomy</h2>
+
+            <p class="pageIntro">
+
+                Click on a part of the brain to learn what it does.
+
+            </p>
+
+            <div class="anatomyContainer">
+
+                <!-- Brain image -->
+
+                <div class="brainArea">
+
+                    <img
+                        src="images/brain.png"
+                        alt="Human Brain"
+                        id="brainImage">
+
+                    <!-- Labels -->
+
+                    <button
+                        class="brainBtn"
+                        data-part="frontal">
+
+                        Frontal Lobe
+
+                    </button>
+
+                    <button
+                        class="brainBtn"
+                        data-part="parietal">
+
+                        Parietal Lobe
+
+                    </button>
+
+                    <button
+                        class="brainBtn"
+                        data-part="temporal">
+
+                        Temporal Lobe
+
+                    </button>
+
+                    <button
+                        class="brainBtn"
+                        data-part="occipital">
+
+                        Occipital Lobe
+
+                    </button>
+
+                    <button
+                        class="brainBtn"
+                        data-part="cerebellum">
+
+                        Cerebellum
+
+                    </button>
+
+                </div>
+
+                <!-- Information -->
+
+                <div class="brainInfo">
+
+                    <h3 id="brainTitle">
+
+                        Brain Parts
+
+                    </h3>
+
+                    <p id="brainText">
+
+                        Select one of the brain parts to learn
+                        about its function.
+
+                    </p>
+
+                    <ul id="brainList">
+
+                        <li>Decision making</li>
+                        <li>Memory</li>
+                        <li>Movement</li>
+
+                    </ul>
+
+                    <div class="factCard">
+
+                        <h4>Fun Fact</h4>
+
+                        <p id="brainFactBox">
+
+                            Your brain is made up of different
+                            regions that work together to help
+                            you think, move and stay alive.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        </section>
+
+                <!-- Activity -->
+
+        <section id="activity" class="page">
+
+            <h2>How the Brain Sends Signals</h2>
+
+            <p class="pageIntro">
+
+                Your brain communicates with the rest of your body using
+                tiny electrical signals that travel through neurons.
+
+            </p>
+
+            <div class="activityContainer">
+
+                <!-- Neuron animation -->
+
+                <div class="neuronArea">
+
+                    <div class="neuronStart"></div>
+
+                    <div class="neuronLine">
+
+                        <div id="signal"></div>
+
+                    </div>
+
+                    <div class="neuronEnd"></div>
+
+                </div>
+
+                <button id="signalBtn">
+
+                    Send Signal
+
+                </button>
+
+                <p id="signalText">
+
+                    Press the button to send a signal.
+
+                </p>
+
+            </div>
+
+            <div class="infoCards">
+
+                <div class="infoCard">
+
+                    <h3>What is a Neuron?</h3>
+
+                    <p>
+
+                        Neurons are specialised cells that carry messages
+                        around the body. They allow you to think, move,
+                        feel and react.
+
+                    </p>
+
+                </div>
+
+                <div class="infoCard">
+
+                    <h3>Fast Facts</h3>
+
+                    <ul>
+
+                        <li>Signals travel as electrical impulses.</li>
+
+                        <li>The brain contains about 86 billion neurons.</li>
+
+                        <li>Some nerve signals can travel over 100 m/s.</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Quiz -->
+
+        <section id="quiz" class="page">
+
+            <h2>Brain Quiz</h2>
+
+            <p class="pageIntro">
+
+                Test what you've learnt about the human brain.
+
+            </p>
+
+            <div class="quizContainer">
+
+                <div class="quizProgress">
+
+                    Question
+                    <span id="questionNo">1</span>
+                    of
+                    <span id="totalQuestions">5</span>
+
+                </div>
+
+                <h3 id="question">
+
+                    Loading question...
+
+                </h3>
+
+                <form id="quizForm">
+
+                    <label class="answer">
+
+                        <input
+                            type="radio"
+                            name="answer"
+                            value="0">
+
+                        <span id="option0">
+
+                            Option A
+
+                        </span>
+
+                    </label>
+
+                    <label class="answer">
+
+                        <input
+                            type="radio"
+                            name="answer"
+                            value="1">
+
+                        <span id="option1">
+
+                            Option B
+
+                        </span>
+
+                    </label>
+
+                    <label class="answer">
+
+                        <input
+                            type="radio"
+                            name="answer"
+                            value="2">
+
+                        <span id="option2">
+
+                            Option C
+
+                        </span>
+
+                    </label>
+
+                    <label class="answer">
+
+                        <input
+                            type="radio"
+                            name="answer"
+                            value="3">
+
+                        <span id="option3">
+
+                            Option D
+
+                        </span>
+
+                    </label>
+
+                    <button
+                        type="submit"
+                        id="submitQuiz">
+
+                        Submit
+
+                    </button>
+
+                </form>
+
+                <div id="quizFeedback">
+
+                    Choose an answer and press Submit.
+
+                </div>
+
+                <button id="nextBtn">
+
+                    Next Question
+
+                </button>
+
+            </div>
+
+            <div id="quizResult">
+
+                <h3>Quiz Complete!</h3>
+
+                <p>
+
+                    Your score:
+
+                    <span id="finalScore">
+
+                        0
+
+                    </span>
+
+                    / 5
+
+                </p>
+
+                <button id="restartQuiz">
+
+                    Try Again
+
+                </button>
+
+            </div>
+
+        </section>
+        <!-- Game -->
+
+        <section id="game" class="page">
+
+            <h2>Memory Challenge</h2>
+
+            <p class="pageIntro">
+
+                Match all the brain parts before the timer runs out.
+
+            </p>
+
+            <div class="gameInfo">
+
+                <div>
+
+                    <strong>Moves</strong>
+
+                    <p id="moveCount">
+
+                        0
+
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <strong>Matches</strong>
+
+                    <p id="matchCount">
+
+                        0
+
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <strong>Time</strong>
+
+                    <p>
+
+                        <span id="time">
+
+                            0
+
+                        </span>s
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="gameBoard">
+
+                <!-- Cards created by JavaScript -->
+
+            </div>
+
+            <div id="gameMessage">
+
+                Click two cards to begin!
+
+            </div>
+
+            <button id="restartGame">
+
+                Restart Game
+
+            </button>
+
+            <div id="factArea">
+
+                <h3>Brain Fact</h3>
+
+                <p id="factMessage">
+
+                    Match a pair to learn something new!
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            The Amazing Human Brain
+
+        </p>
+
+    </footer>
+
+    <!-- Sounds -->
+
+    <audio id="clickSound" src="audio/clicksound.mp3"></audio>
+
+    <audio id="correctSound" src="audio/correctsound.mp3"></audio>
+
+    <audio id="winSound" src="audio/winsound.mp3"></audio>
+
+</body>
+
+</html>
